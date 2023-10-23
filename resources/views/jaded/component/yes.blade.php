@@ -1,6 +1,6 @@
 @extends('jaded.index')
-@section('content')
+@section('yes')
 
-    <h1>My name is Jade</h1>
+    <h1>Yes</h1>
 
 @endsection
