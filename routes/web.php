@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('jaded/index');
 });
+Route::get('/no', function () {
+    return view('jaded/component/no');
+});
 
 /*create a link source throught the dictator controller class*/
 Route::resource('dictator', DictatorController::class);
