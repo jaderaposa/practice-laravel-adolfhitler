@@ -14,21 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('layouts/app');
-// });
-Route::get('/', function () {
+
+Route::get('/home', function () {
     return view('home');
-});
+})->name('home');
+
 Route::get('/profile', function () {
     return view('profile');
-});
-// Route::get('/', function () {
-//     return view('section');
-// });
-// Route::get('/section', function () {
-//     return view('section');
-// });
+})->name('profile');
+
 
 /*create a link source throught the dictator controller class*/
 Route::resource('dictator', DictatorController::class);
