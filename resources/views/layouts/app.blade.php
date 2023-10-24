@@ -9,14 +9,12 @@
 
 <body>
     <div class="container">
-        @yield('home')
+        @yield('content')
     </div>
-    <div class="container">
-        @include('section')
-    </div>
-    <div class="container"></div>
 
-    </div>
+    <footer class="footer">
+        @include('signature.signature')
+    </footer>
 </body>
 
 </html>
