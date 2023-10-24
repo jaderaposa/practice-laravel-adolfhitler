@@ -14,12 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('layouts/app');
+// });
 Route::get('/', function () {
-    return view('jaded/index');
+    return view('home');
 });
-Route::get('/no', function () {
-    return view('jaded/component/no');
-});
+// Route::get('/', function () {
+//     return view('section');
+// });
+// Route::get('/section', function () {
+//     return view('section');
+// });
 
 /*create a link source throught the dictator controller class*/
 Route::resource('dictator', DictatorController::class);
